@@ -1,0 +1,143 @@
+.cp_tab *, .cp_tab *:before, .cp_tab *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_tab {
+	margin: 1em auto;
+
+}
+.cp_tab > input[type='radio'] {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+	        appearance: none;
+	display: none;
+}
+.cp_tab .cp_tabpanel {
+	display: none;
+
+}
+.cp_tab > input:first-child:checked ~ .cp_tabpanels > .cp_tabpanel:first-child,
+.cp_tab > input:nth-child(3):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(2),
+.cp_tab > input:nth-child(5):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(3),
+.cp_tab > input:nth-child(7):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(4),
+.cp_tab > input:nth-child(9):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(5),
+.cp_tab > input:nth-child(11):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(6) {
+	display: block;
+}
+.cp_tab > label {
+	position: relative;
+	display: inline-block;
+	padding: 15px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-bottom: 0;
+
+}
+.cp_tab > label:hover,
+.cp_tab > input:focus + label {
+	color: #3399FF;
+}
+.cp_tab > input:checked + label {
+	margin-bottom: -1px;
+	border-color: #cccccc;
+	border-bottom: 1px solid #ffffff;/*背景色と同じ*/
+	border-radius: 6px 6px 0 0;
+}
+.cp_tab .cp_tabpanel {
+	padding: 0.5em 1em;
+	border-top: 1px solid #cccccc;
+
+}
+@media (max-width: 480px) {
+	.cp_tab {
+		width: 100%;
+		font-size: 0.8em;
+
+	}
+	.cp_tab label {
+		padding: 0.5em;
+
+	}
+}
+body {
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.home {
+  background-image: url("home.jpg");
+  background-size: cover;
+  padding: 230px 0 180px 0;
+	color: white;
+	text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN";
+
+}
+.home h1 {
+  opacity: 0.7;
+  font-size: 50px;
+}
+.home p {
+  opacity: 0.7;
+  margin: -20px 0;
+}
+.btn {
+  font-size: 50px;
+  color: black;
+  margin: 20px;
+  opacity: 0.7;
+  float: right;
+}
+.btn:hover {
+  opacity: 1;
+  color: #3399FF;
+	transition: all 0.5s;
+}
+
+.vlog_h{
+
+}
+
+.frame{
+	border-bottom: 2px solid #eee;
+	margin-top: 20px;
+	text-align: center;
+
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+}
+
+.header-right {
+  float: right;
+  margin: 10px 50px 0 0;
+
+}
+footer {
+
+width: 100%;
+
+}
+.profile-left,
+.profile-right {
+	display: inline-block;
+	margin: 0 80px 0 80px;
+
+}
+.profile-right {
+  line-height: 70%;
+	text-align:left;
+}
+.profile {
+	text-align: center;
+
+}
